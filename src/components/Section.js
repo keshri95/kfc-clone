@@ -7,7 +7,36 @@ export const Section = () => {
         <p>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</p>
         <button>Start Order</button>
       </OrderSec>
-      <Bannner></Bannner>
+      <Bannner>
+        <div
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/images/banner-1.webp"
+                class="d-block w-100"
+                alt="slide-1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/banner-2.webp"
+                class="d-block w-100"
+                alt="slide-2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/banner-1.webp"
+                class="d-block w-100"
+                alt="slide-1"
+              />
+            </div>
+          </div>
+        </div>
+      </Bannner>
       <Headers>
         <h1>welcome to kfc!</h1>
       </Headers>
@@ -136,7 +165,7 @@ export const Section = () => {
             <p>view all menu</p>
           </div>
         </ItemsImages>
-      </BrowseHeading>
+      </BrowseHeading>      
     </Center>
   );
 };
@@ -159,11 +188,8 @@ const OrderSec = styled.div`
 `;
 
 const Bannner = styled.div`
-  background-image: url("./images/banner-1.webp");
-  width: 100%;
-  height: 45vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
 `;
 
 const Headers = styled.div`
@@ -181,12 +207,20 @@ const BrowseHeading = styled.div`
   background-color: #f8f9fa;
   width: 100%;
   padding: 2% 10%;
-  `;
-  
-  const ItemsImages = styled.div`
+`;
+
+const ItemsImages = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
   cursor: pointer;
+
+  @media (max-width: 768px){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
 `;
