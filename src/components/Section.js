@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Footer } from "./Footer";
 export const Section = () => {
   return (
     <Center>
@@ -43,13 +44,7 @@ export const Section = () => {
       <BrowseHeading>
         <h1>browse categories</h1>
         <ItemsImages>
-          <div
-            style={{
-              width: "100%",
-              borderRadius: "5px",
-              backgroundColor: "#f8f7f5",
-            }}
-          >
+          <SubMenu>
             <img
               src="./images/match.jpg"
               alt="match day special"
@@ -58,14 +53,8 @@ export const Section = () => {
               }}
             />
             <p>match day special</p>
-          </div>
-          <div
-            style={{
-              width: "100%",
-              borderRadius: "5px",
-              backgroundColor: "#f8f7f5",
-            }}
-          >
+          </SubMenu>
+          <SubMenu>
             <img
               src="./images/chicken.jpg"
               alt="chicken bucket"
@@ -74,15 +63,8 @@ export const Section = () => {
               }}
             />
             <p>chicken bucket</p>
-          </div>
-
-          <div
-            style={{
-              width: "100%",
-              borderRadius: "5px",
-              backgroundColor: "#f8f7f5",
-            }}
-          >
+          </SubMenu>
+          <SubMenu>
             <img
               src="./images/biryani.jpg"
               alt="biryani bucket"
@@ -91,14 +73,8 @@ export const Section = () => {
               }}
             />
             <p>biryani bucket</p>
-          </div>
-          <div
-            style={{
-              width: "100%",
-              borderRadius: "5px",
-              backgroundColor: "#f8f7f5",
-            }}
-          >
+          </SubMenu>
+          <SubMenu>
             <img
               src="./images/box-meal.jpg"
               alt="box meal"
@@ -107,72 +83,54 @@ export const Section = () => {
               }}
             />
             <p>box meal</p>
-          </div>
-          <div
-            style={{
-              width: "100%",
-              borderRadius: "5px",
-              backgroundColor: "#f8f7f5",
-            }}
-          >
+          </SubMenu>
+          <SubMenu>
             <img
               src="./images/burger.jpg"
               alt="burgers"
               style={{ width: "100%" }}
             />
             <p>burgers</p>
-          </div>
-          <div
-            style={{
-              width: "100%",
-              borderRadius: "5px",
-              backgroundColor: "#f8f7f5",
-            }}
-          >
+          </SubMenu>
+          <SubMenu>
             <img
               src="./images/home.jpg"
               alt="stay home specials"
               style={{ width: "100%" }}
             />
             <p>stay home specials</p>
-          </div>
-          <div
-            style={{
-              width: "100%",
-              borderRadius: "5px",
-              backgroundColor: "#f8f7f5",
-            }}
-          >
+          </SubMenu>
+          <SubMenu>
             <img
               src="./images/snaks.jpg"
               alt="snacks"
               style={{ width: "100%" }}
             />
             <p>snacks</p>
-          </div>
-          <div
-            style={{
-              width: "100%",
-              borderRadius: "5px",
-              backgroundColor: "#f8f7f5",
-            }}
-          >
+          </SubMenu>
+          <SubMenu>
             <img
               src="./images/finger_lickin.fc21c805.svg"
               alt="view all menu"
               style={{ width: "100%" }}
             />
             <p>view all menu</p>
-          </div>
+          </SubMenu>
         </ItemsImages>
-      </BrowseHeading>      
+      </BrowseHeading>
+      <Footer />
     </Center>
   );
 };
 
 const Center = styled.div`
-  // width: 100%;
-  // height: 40vh;
+  width: 100%;
+`;
+
+const SubMenu = styled.div`
+width: 100%,
+border-radius: 5px,
+background-color: #f8f7f5;
 `;
 
 const OrderSec = styled.div`
@@ -183,7 +141,7 @@ const OrderSec = styled.div`
   padding: 10px 0;
   gap: 10px;
   text-transform: uppercase;
-  background-color: black;
+  background-color: #202124;
   color: #fff;
 `;
 

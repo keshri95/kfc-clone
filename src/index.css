@@ -16,3 +16,20 @@ button:hover{
   background-color: rgb(204, 66, 66);
   cursor: pointer;
 }
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+li{
+  cursor: pointer;
+}
+i{
+  padding: 10px;
+  background: darkslategrey;
+  border: 1px solid grey;
+  margin: 0 5px;
+  border-radius: 50px;
+  color: #fff;
+}
