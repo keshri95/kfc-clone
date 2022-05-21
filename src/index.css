@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 button{
-  padding: 15px 25px;
+  padding: 10px;
   background-color: rgb(233, 48, 48);
   border: none;
   border-radius: 100px;
@@ -18,8 +18,10 @@ button:hover{
 }
 a{
   text-decoration: none;
+  color: #000 !important;
+  font-weight: 500;
 }
-ul{
+ul,li{
   list-style: none;
 }
 li{
@@ -32,4 +34,5 @@ i{
   margin: 0 5px;
   border-radius: 50px;
   color: #fff;
+  cursor: pointer;
 }

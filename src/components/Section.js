@@ -10,28 +10,28 @@ export const Section = () => {
       </OrderSec>
       <Bannner>
         <div
-          class="carousel slide"
+          className="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <img
                 src="/images/banner-1.webp"
-                class="d-block w-100"
+                className="d-block w-100"
                 alt="slide-1"
               />
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
                 src="/images/banner-2.webp"
-                class="d-block w-100"
+                className="d-block w-100"
                 alt="slide-2"
               />
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
                 src="/images/banner-1.webp"
-                class="d-block w-100"
+                className="d-block w-100"
                 alt="slide-1"
               />
             </div>
@@ -180,5 +180,6 @@ const ItemsImages = styled.div`
     gap: 20px;
     text-align: center;
     cursor: pointer;
+    width:100%;
   }
 `;
