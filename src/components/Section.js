@@ -124,7 +124,8 @@ export const Section = () => {
 };
 
 const Center = styled.div`
-  width: 100%;
+  // width: 100%;
+  margin-top: 5%;
 `;
 
 const SubMenu = styled.div`
