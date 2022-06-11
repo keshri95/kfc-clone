@@ -51,8 +51,6 @@ export const Footer = () => {
             <li>
               <img src="./images/google_play.svg" alt="play" />
             </li>
-          </ul>
-          <ul>
             <li>
               <img src="./images/apple.svg" alt="apple" />
             </li>
